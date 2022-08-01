@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Square Peg', cursive;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+    
+}
+
+nav{
+display: flex;
+margin: auto;
+padding: 10px 0;
+align-items: center;
+justify-content: center;
+background-color: #eff4fd ;
+position: sticky;
+top: 0;
+z-index: 1000;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 60px;
+}
+
+nav ul li a{
+text-decoration: none;
+color:#7D5A50;
+font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #45302a;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#home::before{
+    content: "";
+    position: absolute ;
+    top: 0;
+    right: 0;
+}
+.images {
+    margin-top: 300px;
+    object-fit: contain;
+    width: 55%;
+    height: 80%;
+    position: flex;
+    right: 100px;
+}
+.images h1{
+    font-size: 60px;
+    color: #45302a;
+    margin-bottom: 200px;
+    margin-left: 50px;
+}
+.images p{
+    font-size: 30px;
+    color: #7D5A50;
+    line-height: 22px;
+    margin-left: 50px;
+}
+
+.images img{
+    height: 90%;
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+    transform: translateX(-20%);
+    transition: bottom 1s, left 1s;}
+
+.images .shape{
+    width: 500px;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .girl{
+    left: 65%;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    background-color: #eff4fd;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.headings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headings h2{
+    color: var(#45302a);
+    border-bottom: 3px solid var(#45302a);
+    font-size: 1.8rem;
+}
+.about-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-text{
+    width: 1300px;
+    height: 400px;
+    margin: 160px auto;
+    justify-content: center;
+}
+.about-text .box{
+position: relative;
+width: calc(500px - 30px);
+height: calc(500px - 30px);
+background: #b8aba4;
+float: left;
+margin: 50px;
+overflow: hidden;
+border-radius: 20px;
+}
+.about-text .box p{
+    position: absolute;
+    top: 100px;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 0,5ms;
+    font-size: 23px;
+}
+
+.about-text .box .hobiai{
+    position: absolute;
+    top: 100px;
+    height: calc(100% - 100px);
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 0,5ms;
+    font-size: 25px;
+}    
+.about-text .box .icon{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #45302a;
+transition: 0.5s;
+z-index: 1;
+}
+.about-text .box .education{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #45302a;
+    transition: 0.5s;
+    z-index: 1;
+    }
+.about-text .box:hover .icon{
+    top: 30px;
+    right: calc(50% - 40px);
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+}
+.about-text .box:hover .education{
+    top: 30px;
+    right: calc(50% - 40px);
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+}
+.about-text .box .icon img{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size: 80px;
+color: white;
+}
+.about-text .box .education img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    color: white;
+    }
+.about-img{
+    margin-top: 70px;
+    width: 420px;
+    height: 650px;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+#bendraukime {
+    display: flex;
+    flex-direction: column;
+    background-color: #eff4fd;
+    padding: 20px;
+} 
+
+.container{
+width: 100%;
+ height: 100vh;
+  background: #eff4fd; 
+  display: flex;
+ align-items: center;
+}
+
+.container form{
+    background: #eff4fd;
+    display: flex;
+    flex-direction: column;
+   padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px; 
+} 
+
+form h3{
+    color: #45302a;     
+    font-weight: 800;       
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #b8aba4;
+    font-size: 16px;
+}
+form button{
+    padding: 15px;
+    background: #45302a;
+    color: white;
+    font-size: 25;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;}
